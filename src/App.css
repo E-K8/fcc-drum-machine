@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
 
-html {
-  min-height: 100vh;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #cbe4de;
 }
 
@@ -10,9 +15,60 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
 }
 
 h1 {
   color: #2c3333;
   font-family: 'Carrois Gothic SC', sans-serif;
+  margin-bottom: 15px;
+}
+
+#display {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Carrois Gothic SC', sans-serif;
+  color: #2c3333;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
+.drum-pad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.drum-pad:hover,
+.drum-pad:active {
+  background-color: #d4e6e2;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.audio {
+  display: none;
 }
