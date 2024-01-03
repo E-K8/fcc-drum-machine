@@ -2,9 +2,7 @@
 
 ### [Task](task.md)
 
-#### [Deployment will be here](#)
-
-#### Optional notes and [relevant link](#)
+#### [Demo](https://ek8-fcc-drum-machine.netlify.app)
 
 To run locally:
 
